@@ -14,7 +14,7 @@ The code in this repo has been upgraded from Python 2 to Python 3 by [Siddharth 
 According to your `ud120-projects` location you may have to change the path for every `sys.path.append(os.path.abspath(("../tools/")))` to `sys.path.append(os.path.abspath(("./tools/")))` (Basically '../' to './' for all of the files path) or vice-versa in your `.py` files.
 
 
-# use this code to handle word_data.pkl file str contet 
+## use this code to handle word_data.pkl file str contet 
 
 `#!/usr/bin/env python
 """
