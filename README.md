@@ -12,25 +12,6 @@ The code in this repo has been upgraded from Python 2 to Python 3 by [Siddharth 
 
 ### Path Note
 According to your `ud120-projects` location you may have to change the path for every `sys.path.append(os.path.abspath(("../tools/")))` to `sys.path.append(os.path.abspath(("./tools/")))` (Basically '../' to './' for all of the files path) or vice-versa in your `.py` files.
+- run handle word_data file to handle word_data str content 
 
 
-## use this code to handle word_data.pkl file str contet 
-
-`#!/usr/bin/env python
-"""
-convert dos linefeeds (crlf) to unix (lf)
-usage: dos2unix.py
-"""
-original = "word_data.pkl"
-destination = "word_data_unix.pkl"
-
-content = ''
-outsize = 0
-with open(original, 'rb') as infile:
-content = infile.read()
-with open(destination, 'wb') as output:
-for line in content.splitlines():
-outsize += len(line) + 1
-output.write(line + str.encode('\n'))
-
-print("Done. Saved %s bytes." % (len(content)-outsize))`
